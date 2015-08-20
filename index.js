@@ -1,5 +1,15 @@
-var riot = require('riot'),
-    loaderUtils = require('loader-utils');
+var riot = require('riot');
+var parsers = require('riot/lib/server/parsers');
+var loaderUtils = require('loader-utils');
+var sass = require('node-sass');
+
+
+parsers.css.sass = function(tagName, css) {
+  var result = sass.renderSync({
+    data: css
+  });
+  return result.css.toString('utf8');
+}
 
 
 module.exports = function (source) {

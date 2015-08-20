@@ -1,14 +1,14 @@
 {
-  "name": "riotjs-loader",
-  "version": "1.1.3",
-  "description": "riotjs module loader for webpack",
+  "name": "jimmyg-riotjs-loader",
+  "version": "1.1.4",
+  "description": "Fork of riotjs-loader by Eduardo Nunes to include SASS and TypeScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/esnunes/riotjs-loader.git"
+    "url": "https://github.com/threeaims/riotjs-loader.git"
   },
   "keywords": [
     "webpack",
@@ -18,19 +18,24 @@
     "module"
   ],
   "author": {
-    "name": "Eduardo Nunes",
-    "email": "esnunes@gmail.com"
+    "name": "James Gardner",
+    "email": "james@pythonweb.org"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/esnunes/riotjs-loader/issues"
-  },
-  "homepage": "https://github.com/esnunes/riotjs-loader",
   "dependencies": {
     "loader-utils": "^0.2.6"
   },
   "peerDependencies": {
+    "babel": "^5.0.12",
+    "babel-core": "^5.0.12",
+    "babel-loader": "^5.0.0",
+    "css-loader": "^0.9.1",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "node-sass": "^3.2.0",
     "riot": "^2.0.5",
-    "webpack": "^1.5.3"
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.9.0",
+    "typescript-simple": "^2.0.0",
+    "webpack": "^1.9.2"
   }
 }
